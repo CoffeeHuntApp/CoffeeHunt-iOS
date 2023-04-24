@@ -13,6 +13,7 @@
 		39E0465E29F6F3D40036BDAC /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39E0465D29F6F3D40036BDAC /* ContentView.swift */; };
 		39E0466029F6F3D40036BDAC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 39E0465F29F6F3D40036BDAC /* Assets.xcassets */; };
 		39E0466429F6F3D40036BDAC /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 39E0466329F6F3D40036BDAC /* Preview Assets.xcassets */; };
+		39E0466B29F6F49B0036BDAC /* LaunchScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39E0466A29F6F49B0036BDAC /* LaunchScreen.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		39E0465F29F6F3D40036BDAC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		39E0466129F6F3D40036BDAC /* CoffeeHunt.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = CoffeeHunt.entitlements; sourceTree = "<group>"; };
 		39E0466329F6F3D40036BDAC /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		39E0466A29F6F49B0036BDAC /* LaunchScreen.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LaunchScreen.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +58,7 @@
 		39E0465529F6F3D40036BDAC /* CoffeeHunt */ = {
 			isa = PBXGroup;
 			children = (
+				39E0466A29F6F49B0036BDAC /* LaunchScreen.swift */,
 				39E0465629F6F3D40036BDAC /* CoffeeHuntApp.swift */,
 				39E0465829F6F3D40036BDAC /* Persistence.swift */,
 				39E0465D29F6F3D40036BDAC /* ContentView.swift */,
@@ -147,6 +150,7 @@
 			files = (
 				39E0465729F6F3D40036BDAC /* CoffeeHuntApp.swift in Sources */,
 				39E0465C29F6F3D40036BDAC /* CoffeeHunt.xcdatamodeld in Sources */,
+				39E0466B29F6F49B0036BDAC /* LaunchScreen.swift in Sources */,
 				39E0465E29F6F3D40036BDAC /* ContentView.swift in Sources */,
 				39E0465929F6F3D40036BDAC /* Persistence.swift in Sources */,
 			);
@@ -295,10 +299,12 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.sashanavruzova.CoffeeHunt;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = auto;
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -333,10 +339,12 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.sashanavruzova.CoffeeHunt;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = auto;
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

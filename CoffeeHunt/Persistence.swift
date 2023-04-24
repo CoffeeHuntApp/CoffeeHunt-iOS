@@ -2,7 +2,7 @@
 //  Persistence.swift
 //  CoffeeHunt
 //
-//  Created by Александра Наврузова on 24/04/2023.
+//  Created by Sasha Navruzova on 24/04/2023.
 //
 
 import CoreData
