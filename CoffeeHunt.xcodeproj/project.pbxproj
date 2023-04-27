@@ -14,6 +14,12 @@
 		39E0466029F6F3D40036BDAC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 39E0465F29F6F3D40036BDAC /* Assets.xcassets */; };
 		39E0466429F6F3D40036BDAC /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 39E0466329F6F3D40036BDAC /* Preview Assets.xcassets */; };
 		39E0466B29F6F49B0036BDAC /* LaunchScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39E0466A29F6F49B0036BDAC /* LaunchScreen.swift */; };
+		39FBF45929FB11FA0026B365 /* GoogleMaps in Frameworks */ = {isa = PBXBuildFile; productRef = 39FBF45829FB11FA0026B365 /* GoogleMaps */; };
+		39FBF45B29FB11FA0026B365 /* GooglePlaces in Frameworks */ = {isa = PBXBuildFile; productRef = 39FBF45A29FB11FA0026B365 /* GooglePlaces */; };
+		39FBF45E29FB12120026B365 /* MapScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39FBF45C29FB12120026B365 /* MapScreen.swift */; };
+		39FBF45F29FB12120026B365 /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39FBF45D29FB12120026B365 /* MapView.swift */; };
+		39FBF46129FB121A0026B365 /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39FBF46029FB121A0026B365 /* LocationManager.swift */; };
+		39FBF46329FB12C20026B365 /* Config.plist in Resources */ = {isa = PBXBuildFile; fileRef = 39FBF46229FB12C20026B365 /* Config.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +32,10 @@
 		39E0466129F6F3D40036BDAC /* CoffeeHunt.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = CoffeeHunt.entitlements; sourceTree = "<group>"; };
 		39E0466329F6F3D40036BDAC /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		39E0466A29F6F49B0036BDAC /* LaunchScreen.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LaunchScreen.swift; sourceTree = "<group>"; };
+		39FBF45C29FB12120026B365 /* MapScreen.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapScreen.swift; sourceTree = "<group>"; };
+		39FBF45D29FB12120026B365 /* MapView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
+		39FBF46029FB121A0026B365 /* LocationManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
+		39FBF46229FB12C20026B365 /* Config.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Config.plist; path = "../../../Копия/CoffeeHunt/CoffeeHunt/Config.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,6 +43,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				39FBF45929FB11FA0026B365 /* GoogleMaps in Frameworks */,
+				39FBF45B29FB11FA0026B365 /* GooglePlaces in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -58,11 +70,14 @@
 		39E0465529F6F3D40036BDAC /* CoffeeHunt */ = {
 			isa = PBXGroup;
 			children = (
+				39FBF45629FB11BD0026B365 /* Services */,
+				39FBF45529FB11B60026B365 /* Views */,
 				39E0466A29F6F49B0036BDAC /* LaunchScreen.swift */,
 				39E0465629F6F3D40036BDAC /* CoffeeHuntApp.swift */,
 				39E0465829F6F3D40036BDAC /* Persistence.swift */,
 				39E0465D29F6F3D40036BDAC /* ContentView.swift */,
 				39E0465F29F6F3D40036BDAC /* Assets.xcassets */,
+				39FBF46229FB12C20026B365 /* Config.plist */,
 				39E0466129F6F3D40036BDAC /* CoffeeHunt.entitlements */,
 				39E0465A29F6F3D40036BDAC /* CoffeeHunt.xcdatamodeld */,
 				39E0466229F6F3D40036BDAC /* Preview Content */,
@@ -76,6 +91,23 @@
 				39E0466329F6F3D40036BDAC /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		39FBF45529FB11B60026B365 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				39FBF45C29FB12120026B365 /* MapScreen.swift */,
+				39FBF45D29FB12120026B365 /* MapView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		39FBF45629FB11BD0026B365 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				39FBF46029FB121A0026B365 /* LocationManager.swift */,
+			);
+			path = Services;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -94,6 +126,10 @@
 			dependencies = (
 			);
 			name = CoffeeHunt;
+			packageProductDependencies = (
+				39FBF45829FB11FA0026B365 /* GoogleMaps */,
+				39FBF45A29FB11FA0026B365 /* GooglePlaces */,
+			);
 			productName = CoffeeHunt;
 			productReference = 39E0465329F6F3D40036BDAC /* CoffeeHunt.app */;
 			productType = "com.apple.product-type.application";
@@ -122,6 +158,9 @@
 				Base,
 			);
 			mainGroup = 39E0464A29F6F3D40036BDAC;
+			packageReferences = (
+				39FBF45729FB11FA0026B365 /* XCRemoteSwiftPackageReference "GoogleMaps-SP" */,
+			);
 			productRefGroup = 39E0465429F6F3D40036BDAC /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -137,6 +176,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				39E0466429F6F3D40036BDAC /* Preview Assets.xcassets in Resources */,
+				39FBF46329FB12C20026B365 /* Config.plist in Resources */,
 				39E0466029F6F3D40036BDAC /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -148,8 +188,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				39FBF45F29FB12120026B365 /* MapView.swift in Sources */,
+				39FBF45E29FB12120026B365 /* MapScreen.swift in Sources */,
 				39E0465729F6F3D40036BDAC /* CoffeeHuntApp.swift in Sources */,
 				39E0465C29F6F3D40036BDAC /* CoffeeHunt.xcdatamodeld in Sources */,
+				39FBF46129FB121A0026B365 /* LocationManager.swift in Sources */,
 				39E0466B29F6F49B0036BDAC /* LaunchScreen.swift in Sources */,
 				39E0465E29F6F3D40036BDAC /* ContentView.swift in Sources */,
 				39E0465929F6F3D40036BDAC /* Persistence.swift in Sources */,
@@ -281,6 +324,7 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "";
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
@@ -291,7 +335,7 @@
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 13.1;
@@ -321,6 +365,7 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "";
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
@@ -331,7 +376,7 @@
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 13.1;
@@ -370,6 +415,30 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		39FBF45729FB11FA0026B365 /* XCRemoteSwiftPackageReference "GoogleMaps-SP" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/YAtechnologies/GoogleMaps-SP.git";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		39FBF45829FB11FA0026B365 /* GoogleMaps */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 39FBF45729FB11FA0026B365 /* XCRemoteSwiftPackageReference "GoogleMaps-SP" */;
+			productName = GoogleMaps;
+		};
+		39FBF45A29FB11FA0026B365 /* GooglePlaces */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 39FBF45729FB11FA0026B365 /* XCRemoteSwiftPackageReference "GoogleMaps-SP" */;
+			productName = GooglePlaces;
+		};
+/* End XCSwiftPackageProductDependency section */
 
 /* Begin XCVersionGroup section */
 		39E0465A29F6F3D40036BDAC /* CoffeeHunt.xcdatamodeld */ = {
