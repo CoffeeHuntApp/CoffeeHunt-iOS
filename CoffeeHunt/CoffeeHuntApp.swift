@@ -19,7 +19,7 @@ struct CoffeeHuntApp: App {
                 LaunchScreen()
                     .opacity(showLaunchScreen ? 1.0 : 0.0)
                     .animation(.easeOut(duration: 0.5), value: showLaunchScreen)
-                MapScreen()
+                ContentView()
                     .opacity(showLaunchScreen ? 0.0 : 1.0)
                     .animation(.easeOut(duration: 0.5), value: showLaunchScreen)
             }
