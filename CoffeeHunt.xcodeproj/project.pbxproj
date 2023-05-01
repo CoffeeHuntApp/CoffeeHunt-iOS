@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		39CC118E2A002455002E5DAC /* ProfileScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39CC118D2A002455002E5DAC /* ProfileScreen.swift */; };
 		39E0465729F6F3D40036BDAC /* CoffeeHuntApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39E0465629F6F3D40036BDAC /* CoffeeHuntApp.swift */; };
 		39E0465929F6F3D40036BDAC /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39E0465829F6F3D40036BDAC /* Persistence.swift */; };
 		39E0465C29F6F3D40036BDAC /* CoffeeHunt.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 39E0465A29F6F3D40036BDAC /* CoffeeHunt.xcdatamodeld */; };
@@ -23,6 +24,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		39CC118D2A002455002E5DAC /* ProfileScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileScreen.swift; sourceTree = "<group>"; };
 		39E0465329F6F3D40036BDAC /* CoffeeHunt.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CoffeeHunt.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		39E0465629F6F3D40036BDAC /* CoffeeHuntApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoffeeHuntApp.swift; sourceTree = "<group>"; };
 		39E0465829F6F3D40036BDAC /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
@@ -98,6 +100,7 @@
 			children = (
 				39FBF45C29FB12120026B365 /* MapScreen.swift */,
 				39FBF45D29FB12120026B365 /* MapView.swift */,
+				39CC118D2A002455002E5DAC /* ProfileScreen.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -192,6 +195,7 @@
 				39FBF45E29FB12120026B365 /* MapScreen.swift in Sources */,
 				39E0465729F6F3D40036BDAC /* CoffeeHuntApp.swift in Sources */,
 				39E0465C29F6F3D40036BDAC /* CoffeeHunt.xcdatamodeld in Sources */,
+				39CC118E2A002455002E5DAC /* ProfileScreen.swift in Sources */,
 				39FBF46129FB121A0026B365 /* LocationManager.swift in Sources */,
 				39E0466B29F6F49B0036BDAC /* LaunchScreen.swift in Sources */,
 				39E0465E29F6F3D40036BDAC /* ContentView.swift in Sources */,
