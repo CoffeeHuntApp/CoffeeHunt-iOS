@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		39867C8E2A0A8B2500EE50C8 /* MapViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39867C8D2A0A8B2500EE50C8 /* MapViewModel.swift */; };
 		39CC118E2A002455002E5DAC /* ProfileScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39CC118D2A002455002E5DAC /* ProfileScreen.swift */; };
 		39E0465729F6F3D40036BDAC /* CoffeeHuntApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39E0465629F6F3D40036BDAC /* CoffeeHuntApp.swift */; };
 		39E0465929F6F3D40036BDAC /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39E0465829F6F3D40036BDAC /* Persistence.swift */; };
@@ -24,6 +25,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		39867C8D2A0A8B2500EE50C8 /* MapViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewModel.swift; sourceTree = "<group>"; };
 		39CC118D2A002455002E5DAC /* ProfileScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileScreen.swift; sourceTree = "<group>"; };
 		39E0465329F6F3D40036BDAC /* CoffeeHunt.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CoffeeHunt.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		39E0465629F6F3D40036BDAC /* CoffeeHuntApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoffeeHuntApp.swift; sourceTree = "<group>"; };
@@ -53,6 +55,24 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		39867C8B2A0A8B0400EE50C8 /* Map */ = {
+			isa = PBXGroup;
+			children = (
+				39FBF45C29FB12120026B365 /* MapScreen.swift */,
+				39FBF45D29FB12120026B365 /* MapView.swift */,
+				39867C8D2A0A8B2500EE50C8 /* MapViewModel.swift */,
+			);
+			path = Map;
+			sourceTree = "<group>";
+		};
+		39867C8C2A0A8B1100EE50C8 /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				39CC118D2A002455002E5DAC /* ProfileScreen.swift */,
+			);
+			path = Profile;
+			sourceTree = "<group>";
+		};
 		39E0464A29F6F3D40036BDAC = {
 			isa = PBXGroup;
 			children = (
@@ -72,8 +92,9 @@
 		39E0465529F6F3D40036BDAC /* CoffeeHunt */ = {
 			isa = PBXGroup;
 			children = (
+				39867C8C2A0A8B1100EE50C8 /* Profile */,
+				39867C8B2A0A8B0400EE50C8 /* Map */,
 				39FBF45629FB11BD0026B365 /* Services */,
-				39FBF45529FB11B60026B365 /* Views */,
 				39E0466A29F6F49B0036BDAC /* LaunchScreen.swift */,
 				39E0465629F6F3D40036BDAC /* CoffeeHuntApp.swift */,
 				39E0465829F6F3D40036BDAC /* Persistence.swift */,
@@ -93,16 +114,6 @@
 				39E0466329F6F3D40036BDAC /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
-			sourceTree = "<group>";
-		};
-		39FBF45529FB11B60026B365 /* Views */ = {
-			isa = PBXGroup;
-			children = (
-				39FBF45C29FB12120026B365 /* MapScreen.swift */,
-				39FBF45D29FB12120026B365 /* MapView.swift */,
-				39CC118D2A002455002E5DAC /* ProfileScreen.swift */,
-			);
-			path = Views;
 			sourceTree = "<group>";
 		};
 		39FBF45629FB11BD0026B365 /* Services */ = {
@@ -192,6 +203,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				39FBF45F29FB12120026B365 /* MapView.swift in Sources */,
+				39867C8E2A0A8B2500EE50C8 /* MapViewModel.swift in Sources */,
 				39FBF45E29FB12120026B365 /* MapScreen.swift in Sources */,
 				39E0465729F6F3D40036BDAC /* CoffeeHuntApp.swift in Sources */,
 				39E0465C29F6F3D40036BDAC /* CoffeeHunt.xcdatamodeld in Sources */,

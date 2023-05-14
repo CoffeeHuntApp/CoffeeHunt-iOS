@@ -11,7 +11,7 @@ import GooglePlaces
 
 struct MapView: UIViewRepresentable {
     
-    @ObservedObject var locationManager = LocationManager()
+    @ObservedObject var viewModel = MapViewModel(locationManager: LocationManager())
     private let zoom: Float = 15.0
 
     func makeUIView(context: Context) -> GMSMapView {
@@ -27,15 +27,15 @@ struct MapView: UIViewRepresentable {
         GMSServices.provideAPIKey(apiKey)
         GMSPlacesClient.provideAPIKey(apiKey)
         
-        let camera = GMSCameraPosition.camera(withLatitude: locationManager.latitude, longitude: locationManager.longitude, zoom: zoom)
+        let camera = GMSCameraPosition.camera(withLatitude: viewModel.latitude, longitude: viewModel.longitude, zoom: zoom)
         let mapView = GMSMapView.map(withFrame: CGRect.zero, camera: camera)
         return mapView
     }
     
     func updateUIView(_ mapView: GMSMapView, context: Context) {
-        let camera = GMSCameraPosition.camera(withLatitude: locationManager.latitude, longitude: locationManager.longitude, zoom: zoom)
+        let camera = GMSCameraPosition.camera(withLatitude: viewModel.latitude, longitude: viewModel.longitude, zoom: zoom)
         mapView.camera = camera
-        mapView.animate(toLocation: CLLocationCoordinate2D(latitude: locationManager.latitude, longitude: locationManager.longitude))
+        mapView.animate(toLocation: CLLocationCoordinate2D(latitude: viewModel.latitude, longitude: viewModel.longitude))
     }
 }
 
