@@ -16,14 +16,6 @@ class LocationManager: NSObject, ObservableObject {
         willSet { objectWillChange.send() }
     }
     
-    var latitude: CLLocationDegrees {
-        return location?.coordinate.latitude ?? 0
-    }
-    
-    var longitude: CLLocationDegrees {
-        return location?.coordinate.longitude ?? 0
-    }
-    
     override init() {
         super.init()
         
@@ -39,5 +31,6 @@ extension LocationManager: CLLocationManagerDelegate {
     func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
         guard let location = locations.last else { return }
         self.location = location
+        locationManager.stopUpdatingLocation()
     }
 }
